@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="12"
+
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_weight="2"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+    <ImageButton
+        android:id="@+id/samanta_button"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="-10dp"
+    android:scaleType="centerCrop"
+    android:src="@drawable/samanta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+<TextView
+    android:layout_marginLeft="180dp"
+    android:textColor="@color/silver_almost_white"
+    android:layout_marginTop="-90dp"
+    android:textStyle="italic"
+    android:textSize="25sp"
+    android:id="@+id/date_textview"
+    android:gravity="center"
+    android:text="Здесь будет текст"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+    <FrameLayout
+        android:layout_weight="9"
+        android:id="@+id/fragment_container"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_weight="1"
+
+        app:itemTextColor="@color/silver_almost_white"
+        app:itemIconTint="@color/bottom_nav_color"
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/navigatio_menu"
+
+        android:background="@color/forBNV"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom" />
+
+
+
+
+
+
+
+
+</LinearLayout>
+

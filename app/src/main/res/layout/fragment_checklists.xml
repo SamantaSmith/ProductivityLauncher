@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="15dp"
+    >
+
+    <TextView
+        android:layout_marginBottom="-20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/silver"
+        android:text="Еда"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+
+
+        <CheckBox
+            android:visibility="invisible"
+            android:id="@+id/checkBoxBreakfast"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"/>
+
+
+
+        <EditText
+            android:textColor="@color/silver"
+            android:textSize="15sp"
+            android:id="@+id/edit_text_breakfast"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/for_edit_text"
+            android:cursorVisible="false"
+
+            android:inputType="textMultiLine"
+            android:minLines="5" />
+
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:textColor="@color/silver"
+        android:text="Тренировки"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:weightSum="10">
+
+
+
+        <CheckBox
+            android:id="@+id/checkBoxWorkout1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+
+
+
+        <EditText
+            android:textColor="@color/silver"
+            android:textSize="15sp"
+            android:id="@+id/edit_text_workout1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="9"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/for_edit_text_2"
+            android:cursorVisible="false"
+            android:inputType="textMultiLine"
+            android:minLines="5" />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/apply_button"
+        android:text="APPLY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/delete_button"
+        android:text="Delete all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+
+</LinearLayout>
+
+</ScrollView>

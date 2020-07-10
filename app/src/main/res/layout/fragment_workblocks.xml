@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/dela_layout"
+        android:weightSum="8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <ScrollView
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+            <TextView
+                android:gravity="center"
+                android:text="Рабочие блоки"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:textSize="15sp"
+                android:inputType="textMultiLine |textNoSuggestions"
+                android:id="@+id/workblocks_new"
+                android:background="@drawable/for_flayout2"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Важные дела"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:textSize="15sp"
+                android:inputType="textMultiLine |textNoSuggestions"
+                android:id="@+id/tasks_new"
+                android:background="@drawable/for_flayout2"
+                android:layout_margin="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:layout_gravity="center"
+                android:id="@+id/apply_new"
+                android:text="Утвердить"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/morningcare"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="asdas"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    </LinearLayout>
+

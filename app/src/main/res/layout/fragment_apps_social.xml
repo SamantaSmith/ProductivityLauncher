@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="SOCIAL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+
+        android:id="@+id/vk_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="• VK Me"
+        android:textColor="@color/silver"
+        android:textSize="20sp" />
+
+    <TextView
+
+        android:id="@+id/telegram"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="• Telegram"
+        android:textColor="@color/silver"
+        android:textSize="20sp" />
+
+    <TextView
+
+        android:id="@+id/whatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="• WhatsApp"
+        android:textColor="@color/silver"
+        android:textSize="20sp" />
+
+    <TextView
+
+        android:id="@+id/messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="• Messages"
+        android:textColor="@color/silver"
+        android:textSize="20sp" />
+
+    <TextView
+
+        android:id="@+id/telefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="• Telefon"
+        android:textColor="@color/silver"
+        android:textSize="20sp" />
+
+</LinearLayout>

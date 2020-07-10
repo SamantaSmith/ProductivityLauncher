@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:weightSum="10"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textColor="@color/silver_almost_white"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="План на неделю"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+   <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+       android:background="@color/silver"
+
+       xmlns:app="http://schemas.android.com/apk/res-auto"
+       android:id="@+id/workout_calendar"
+       app:mcv_showOtherDates="all"
+       app:mcv_arrowColor="@color/silver_almost_white"
+       app:mcv_calendarMode="week"
+       app:mcv_selectionColor="@color/silver_almost_white"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3"
+       />
+
+    <TextView
+        android:layout_marginTop="15dp"
+android:gravity="center"
+        android:text="Zdes MY"
+        android:textSize="20sp"
+        android:id="@+id/text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edit_text_training"
+        android:layout_margin="20dp"
+        android:hint="Enter smth here.."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/appply_training_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

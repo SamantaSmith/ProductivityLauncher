@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name = "forMainLayout">#4E8150</color>
+    <color name ="forSingleItemLayout">#465B6C</color>
+    <color name ="forBNV">#2C2B2B</color>
+    <color name ="silver">#C0C0C0</color>
+    <color name ="silver_almost_white">#EDEDED</color>
+    <color name ="magenta">#9E627D</color>
+    <color name ="grey">#9E627D</color>
+</resources>

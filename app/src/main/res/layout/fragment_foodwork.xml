@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp">
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:id="@+id/daytimeButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@color/colorPrimaryDark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:textSize="20sp"
+            android:id="@+id/daytime_checktext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Здесь будет текст"
+            android:textColor="@color/silver"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.03"
+            app:layout_constraintStart_toEndOf="@+id/daytimeButton"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="invisible"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+
+    <LinearLayout
+
+        android:padding="16dp"
+        android:background="@drawable/for_flayout4"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:text="Поле для заметок"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:textSize="15sp"
+            android:id="@+id/et_notes"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/for_flayout5"
+            android:minLines="1"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/apply_notes_button"
+        android:text="Утвердить"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:paddingRight="-18dp"
+        android:paddingTop="-10dp"
+        android:weightSum="10"
+        android:background="@drawable/for_flayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0">
+
+        <TextView
+            android:textSize="16sp"
+            android:layout_weight="7"
+            android:id="@+id/paradigma_text_new"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_marginBottom="2dp"
+            android:layout_weight="3"
+            android:id="@+id/sl_image_new"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sl_normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageButton
+
+
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/todo"
+            android:id="@+id/todo_button"
+            android:layout_width="0dp"
+            android:layout_height="65dp"/>
+
+
+        <ImageButton
+
+
+            android:padding="3dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/zenmoney"
+            android:id="@+id/zenmoney_button"
+            android:layout_height="65dp"
+            android:layout_width="0dp"/>
+
+
+        <ImageButton
+            android:layout_weight="1"
+
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/picooc"
+            android:id="@+id/picooc_button"
+            android:layout_width="0dp"
+            android:layout_height="65dp"/>
+
+
+
+        <ImageButton
+            android:padding="10dp"
+android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/unnamed"
+            android:id="@+id/focus_button"
+            android:layout_width="0dp"
+            android:layout_height="65dp"/>
+
+
+        <ImageButton
+            android:padding="3dp"
+android:layout_weight="1"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sl_normal"
+            android:id="@+id/calendar_button"
+            android:layout_width="0dp"
+            android:layout_height="65dp"/>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
